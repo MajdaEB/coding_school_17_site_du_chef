@@ -89,4 +89,20 @@ h2 {
   margin-top: 100px;
 }
 
+h4 {
+  color: white;
+}
+
+.bordure {
+  border: solid 5px;
+}
+
+.rouge {
+  transform: translate(35px, -20px);
+}
+
+.rougeb {
+  transform: translate(-40px, -20px);
+}
+
 /*# sourceMappingURL=style.css.map */
