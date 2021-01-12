@@ -8,7 +8,8 @@
     <!-- Lien Fontawesome -->
     
     <!-- Lien Google Font -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">  
     <!-- Lien CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Site du Chef</title>
@@ -16,70 +17,83 @@
 <body>
     <!-- Navbar en 3 parties -->
     <header>
-        <div class="opacity">
-            <!-- Nav1 -->
-            <nav class="d-flex justify-content-center align-items-center mx-5 pt-3 bg-dark">
-                <ul class="ulnav text-uppercase pt-3 justify-content-center border-top border-bottom d-flex border-white ml-5">
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link active text-white mb-2" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link active text-white" href="#">ABOUT US</a>
-                    </li>
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link active text-white" href="#">MENU LIST</a>
-                    </li>
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link active text-white" href="#">TEAM</a>
-                    </li>
-                </ul>
-                <!-- LOGO -->
-                <div class="mx-3 ml-3">
-                    <img src="./assets/images/logo.png" alt="logo">
-                </div>
-                <!-- Nav2 -->
-                <ul class="ulnav text-uppercase pt-3 border-top border-bottom border-white d-flex justify-content-center">
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link active text-white mb-2" href="#">RESERVATION</a>
-                    </li>
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link text-white" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link text-white" href="#">TESTIMONIALS</a>
-                    </li>
-                    <li class="nav-item justify-content-center">
-                        <a class="nav-link text-white" href="#">CONTACT US</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        
-    </header>
-
-
-
-
-
-
-    <!-- Section Our Story -->
-    <!-- <section class="ourstory bg-dark">
-        <div class="section2 border">
-            <div>
-                <div class="position-absolute text-left">
-                    <img src="./assets/images/box-left-top.png" alt="coinrouge">
-                </div>
-                <div class="coinrouge text-right">
-                    <img src="./assets/images/box-right-top.png" alt="coinrouge">
-                </div>
-                <div class="row">
-                    <div class="text-center mt-5 col ourstory">
-                        <h2><span class="fushia">Our</span> Story</h2>
-                        <img src="./assets/images/decoration_line.png" alt="ligne-decorative">
+        <!-- Nav1 -->
+        <nav class="d-flex justify-content-center align-items-center mx-5 pt-3 bg-dark">
+            <ul class="ulnav text-uppercase pt-3 justify-content-center border-top border-bottom d-flex border-white ml-5">
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link active text-white mb-2" href="#">HOME</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link active text-white" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link active text-white" href="#">MENU LIST</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link active text-white" href="#">TEAM</a>
+                </li>
+            </ul>
+            <!-- LOGO -->
+            <div class="mx-3 ml-3">
+                <img src="./assets/images/logo.png" class="" alt="logo">
+            </div>
+            <!-- Nav2 -->
+            <ul class="ulnav text-uppercase pt-3 border-top border-bottom border-white d-flex justify-content-center">
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link active text-white mb-2" href="#">RESERVATION</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link text-white" href="#">BLOG</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link text-white" href="#">TESTIMONIALS</a>
+                </li>
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link text-white" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Carrousel -->
+        <div class="contenairbis bg-danger">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <img class="w-100 opacity" src="./assets/images/banner1.jpg" alt="bannière">
+                    <div class="carousel-item active text-center" role="listbox">
+                        <p class="pcarousel text-center text-white">
+                            Whatever your OCCASION,<br> <span class="fushia">TASTE</span>
+                            makes it one <br> to remember!
+                        </p>
+                        <button type="button" class="btnblancbtn btn-light p-2">PURCHASE THEME</button>
+                        <button type="button" class=" btnfushia btn btn-fushia p-2">LEARN MORE</button>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <p class="pcarousel text-center text-white">
+                            Whatever your OCCASION,<br> <span class="fushia">TASTE</span>
+                            makes it one <br> to remember!
+                        </p>
+                        <button type="button" class="btnblanc text-uppercase btn btn-light p-2">PURCHASE THEME</button>
+                        <button type="button" class=" btnred btn btn-danger text-uppercase p-2">LEARN MORE</button>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <p class=" pcarousel text-center text-white mx-auto">
+                            Whatever your OCCASION,<br> <span class="text-danger">TASTE</span>
+                            makes it one <br> to remember!
+                        </p>
+                        <button type="button" class="btnblanc text-uppercase btn btn-light p-2">PURCHASE THEME</button>
+                        <button type="button" class="btnred btn btn-danger text-uppercase p-2">LEARN MORE</button>
                     </div>
                 </div>
+                <div class="dentelle"></div>
             </div>
         </div>
-    </section> -->
+    </header>
+
+    <!-- Section Our Story -->
+   
 </body>
 </html>
